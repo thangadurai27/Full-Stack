@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie's Paradise</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ff9800;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #ff9800;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            width: 200px;
+            background: #f9f9f9;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .social-links a {
+            color: #ff9800;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9rem;
+        }
+
+        /* Cursor Animation */
+        body {
+            cursor: none;
+        }
+
+        .cursor {
+            width: 15px;
+            height: 15px;
+            border: 2px solid #ff9800;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            animation: cursor-blink 0.8s infinite;
+        }
+
+        @keyframes cursor-blink {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Foodie's Paradise</h1>
+        <p>Your Gateway to Delicious Meals</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Foodie's Paradise</h2>
+        <p>We serve the best food in town, crafted with love and passion. Come and enjoy a delightful dining experience!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Margherita Pizza</h3>
+            <p>Classic pizza topped with fresh tomatoes, mozzarella, and basil.</p>
+            <p><strong>Price: $12.99</strong></p>
+        </div>
+        <div class="menu-item">
+            <h3>Grilled Chicken Salad</h3>
+            <p>Healthy and delicious salad with grilled chicken, greens, and dressing.</p>
+            <p><strong>Price: $9.99</strong></p>
+        </div>
+        <div class="menu-item">
+            <h3>Chocolate Lava Cake</h3>
+            <p>Rich and gooey chocolate cake served with vanilla ice cream.</p>
+            <p><strong>Price: $6.99</strong></p>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscriptionForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <span id="error-message" class="error"></span><br><br>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>123 Foodie Lane, Gourmet City, FL 12345</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        // Form Validation and Interactivity
+        document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const emailField = document.getElementById('email');
+            const errorMessage = document.getElementById('error-message');
+
+            if (!emailField.value || !emailField.value.includes('@')) {
+                errorMessage.textContent = 'Please enter a valid email address.';
+            } else {
+                errorMessage.textContent = '';
+                alert('Thank you for subscribing!');
+                emailField.value = '';
+                document.getElementById('name').value = '';
+            }
+        });
+
+        // Cursor Animation
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = `${e.pageX}px`;
+            cursor.style.top = `${e.pageY}px`;
+        });
+    </script>
+</body>
+</html>
