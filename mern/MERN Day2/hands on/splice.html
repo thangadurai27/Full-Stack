@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice Example</title>
+</head>
+<body>
+    <h1>Array Splice Example</h1>
+    <p id="demo"></p>
+
+    <script>
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = "Original Array: " + fruits;
+
+       
+        fruits.splice(2, 2, "Lemon", "Kiwi");
+        document.getElementById("demo").innerHTML += "<br>Modified Array: " + fruits;
+    </script>
+</body>
+</html>
+
+<!-- Output: Original Array: Banana, Orange, Apple, Mango

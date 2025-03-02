@@ -1,0 +1,79 @@
+every component will have props and states
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+props
+-----
+	it wont change, example : name , tata besleri
+
+states
+-------
+	it changes or we can change it, example :water level in bottle(initial state-full, updated state-half, current state empty)
+
+
+===========================================================================================================================================
+
+
+flipkart website
+HOME
+	~mobile
+	~Grocery
+	~fashion
+
+
+MOBILE
+	props: name, version, price
+	state: discount, stock available
+
+
+
+passing props b/w component 
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+react hooks
+ ccstae concept not available with functional components
+
+ hooks is use to implement state in functional components
+  types
+	1. useStase
+	2. useEffect
+	3. useRef
+	4. useContext
+	5. useReducer
+
+
+example 
+useState
+
+counter Clock
+stating the initaial state as 0, we can increment,  decrement, reset using hook
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

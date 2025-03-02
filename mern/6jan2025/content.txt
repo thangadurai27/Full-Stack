@@ -1,0 +1,105 @@
+work for a day
+
+complete your 3 assignment (html, tail wind css)
+
+
+static(non intractive)
+dynamic(intractive)
+
+
+js
+
+used in client side and service side
+one of the power full prgming lng == c/c++, py
+
+react and angular are popular framework or library of js
+
+
+
+js data types
+
+let var const
+
+let (local)
+var (global)
+
+
+
+var x = 100;
+if (x==100)
+alert("yes")
+else
+alert("no")
+
+
+for(let i=0;i<10;i++)
+alert(i)
+
+do example program for each of the following
+simple if
+if else
+else if
+else if ladder
+nested if 
+  
+case 1 
+
+input
+no of lemon in hand : 7
+
+output
+god 1 7 offer
+god 2 need 7
+god 3 need 7
+
+shortage 14
+
+
+case 2
+
+input
+no of lemon in hand : 21
+
+output
+god 1 7 offer
+god 2 7 offer
+god 3 7 offer
+
+sufficient
+
+case 3
+
+input
+no of lemon in hand : 15
+
+output
+god 1 7 offer
+god 2 7 offer
+god 3 having 1 needed 6
+
+shortage 6
+
+
+
+case 4
+
+input
+no of lemon in hand : 67
+
+output
+god 1 7 offer
+god 2 need 7
+god 3 need 7
+
+surplus 46
+
+
+
+sam is having 75 candies
+he gives half of it to his friend angel
+since angel love a sam lot, see gives back half of it
+
+
+calculate how many candies did sam and angel remaining
+
+use only one variable anf use function, without paramater and argument

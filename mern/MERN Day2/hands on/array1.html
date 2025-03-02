@@ -1,0 +1,65 @@
+<!--
+create an array by taking array size and array element from the user , extract all the perfect numbers and even prime number from the array
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let size = prompt("Enter the size of the array");
+
+        let arr = []
+
+
+        for (var i = 0; i < size; i++) {
+            
+                var num = prompt("Enter the "+i+"th in the array");   
+                arr[i] = num
+        }
+
+        alert("Perfect numbers")
+
+
+
+
+        divisor = []
+        for (let i = 0; i <= size; i++){
+        
+
+        isperfect = 0
+
+        for (let j = 0; j<=arr[i];j++ ){
+            if (arr[i]%j == 0){
+                isperfect += j
+            }
+        } 
+        if (isperfect == arr[i]){
+            divisor.push(isperfect)
+        }        }
+
+        alert(divisor)
+
+
+
+
+
+
+
+        for (var i = 0; i < size; i++) {
+            
+            alert(arr[i])  
+    }
+
+    </script>
+
+
+
+</body>
+</html>

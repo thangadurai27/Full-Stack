@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="calculate()">Calculate</button>
+
+    <h2>Results:</h2>
+    <p id="results"></p>
+
+    <script>
+        const add = (a, b) => a + b;
+        const subtract = (a, b) => a - b;
+        const multiply = (a, b) => a * b;
+        const divide = (a, b) => b !== 0 ? a / b : 'Error: Division by zero';
+        const remainder = (a, b) => b !== 0 ? a % b : 'Error: Division by zero';
+
+        function calculate() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            const results = `
+                Addition: ${add(num1, num2)}<br>
+                Subtraction: ${subtract(num1, num2)}<br>
+                Multiplication: ${multiply(num1, num2)}<br>
+                Division: ${divide(num1, num2)}<br>
+                Remainder: ${remainder(num1, num2)}
+            `;
+
+            document.getElementById('results').innerHTML = results;
+        }
+    </script>
+</body>
+</html>

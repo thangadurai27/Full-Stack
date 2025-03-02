@@ -1,0 +1,60 @@
+<!-- task: create an array by taking array size and array elements from the user extract all the perfect numbers and even prime numbers-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    var arr = [3, 6, 28];
+    // alert(arr);
+
+    function arrayAppend() {
+      // for (i = 0; i < document.getElementById('n1').value; i++){
+      //     var n = parseInt(prompt("Enter the "+i+" th element"));
+      //     arr[i] = n;
+      // }
+
+      alert(arr);
+    }
+
+    function chk() {
+      var perfect = [];
+    //    alert("function called")
+
+      for (i = 0; i < 3; i++) {
+        var s = 0;
+        var value = arr[i];
+
+        console.log(3 % 1 == 0);
+
+        //sum
+        for (j = 1; j < value; j++) {
+            //  console.log(j);
+
+          if (value % j == 0) {
+            s += j;
+          }
+        }
+        
+
+        //check if perfect
+        if (s == value) {
+          
+          perfect.push(s);
+        }
+      }
+
+      console.log(perfect);
+
+    }
+
+
+  </script>
+  <body>
+    <input type="number" id="n1" placeholder="enter size of the array" />
+    <button onclick="arrayAppend()">add elements</button>
+    <button onclick="chk()">check</button>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+var reached = true
+    let isReachedA = new Promise ((resolve ,  reject)=>
+    {
+        var reached = false
+        if (reached){
+            setTimeout(resolve, 5000,"A Reached home") 
+        }
+        else {
+            reject("A not reached home")
+        }
+    })
+    let isReachedB = new Promise ((resolve ,  reject)=>
+    {
+        var reached = false
+        if (reached){
+            setTimeout(resolve, 2000,"B Reached home") 
+        }
+        else {
+            reject("B not reached home")
+        }
+    })
+    let isReachedC = new Promise ((resolve ,  reject)=>
+    {
+        var reached = false
+        if (reached){
+            setTimeout(resolve, 1000,"c Reached home") 
+        }
+        else {
+            reject("C not reached home")
+        }
+    })
+ 
+
+Promise.race([isReachedA,isReachedB,isReachedC]).then((message)=>{
+    console.log(message)
+}).catch((message)=>{
+    console.log(message)
+})
+
+
+
+</script>    
+</body>
+</html>

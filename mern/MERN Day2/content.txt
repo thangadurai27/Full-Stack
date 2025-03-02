@@ -1,0 +1,80 @@
+tailwind css (important)
+
+why console?
+
+
+arrow function - under es 6     
+
+ecma script  
+
+its from es 6 for efficiency in terms of space and to increase a readability
+we can create a functions without name and its called as arrow function
+
+
+
+example  
+
+<body>
+<h1 src = "response"></h1>
+<h1 src = "res"></h1>
+</body>
+   
+ <script>  
+        var add = (a,b) => {return a+b }
+
+        const howareyou = () => {    // howareyou --> variable
+            return 100;
+        };
+
+
+document.getElementById("response").innerHTML = howareyou()
+document.getElementById("res").innerHTML = add(100,200)  // document --> object,getElementById --> methond 
+
+
+
+</script>
+
+
+
+design a simple calculatore
+by getting two number as input display the add, sub,pro,ques,remai by creating individual arrow  funtion for the same 
+
+
+array
+var name = ["etftgef","wdgfdtfe","effgyefye","efgeyufe"]
+
+
+create an array by taking array size and array element from the user , extract all the perfect numbers and even prime number from the array
+
+push  - add elmnt at last
+pop  -  remove last elmnt from array
+shift  - removes first elmnt from array
+unshigt  -  add element at first 
+splice  -  splice
+slice 
+
+
+
+oops
+object oriented programming structure
+
+class - bird
+
+obect - peacock, crow, parrot
+
+property - color, wing , size , legs, weight
+
+behavior(methond) - eat, walk, fly 
+
+
+
+
+
+
+js promise 
+
+2 stage
+
+        resolve(success)
+        rejected(fail)
+

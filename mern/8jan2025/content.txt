@@ -1,0 +1,135 @@
+
+write a promise called andhra - bp 
+personA, personB,personC
+
+distance 
+andhra - personA 5000
+andhra - personB 2000
+andhra - personC 1000
+
+
+output
+
+personC reached
+personB reached
+personA reached
+
+----------------------------------------------------------------------------------------------------
+
+
+when ther is more than one promise in order to review them we can use promise inbuilt methods according to the requriment 
+
+methods
+1. promise.all
+        once it sees a promise false, it will stop
+
+2. promise.any
+        gives a shortest time promise provied status should be true
+
+
+3. promise.allsettled
+        will display one among three status or result
+                1. fullfil
+                2. reject
+                2. pending
+
+4. promise.race
+        any will work only in true 
+        but race also work with false also
+
+====================================================================================================
+====================================================================================================
+
+
+
+react  js
+
+        library or framework of javascript 
+        example websit
+            netflix and amazon
+        
+        html wedsite
+            youtube and wikipedia
+
+C:\Users\Karthi\Desktop\react>
+
+
+1. create ah folder called react in desktop
+2. open cmd(double click the folder, go to path, enter cmd)
+
+3. COMMANDS
+~ node -v  (check node )
+~ npm -v (check version of npm(node package manager))
+
+
+4. creating the app using following command
+~  npx create-react-app demo
+~ npm start 
+
+
+5. make it work
+~ open react folder , will see app folder got created
+
+~cd demo
+~code .
+
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+2  important folder in react - public folder, src folder 
+
+3 important files - index.html, index.js, index.css
+
+
+*************************************************
+notes : as of now , dont touch these files
+        initial do/wrt a code in app.js
+*************************************************
+
+dom
+  react follow v dom  (virtual)
+unlike html, once here, once dom get created , the changes are manipulation what we do gets completed on only that part get rerended 
+where as in html , every time will make change entire dom will rerended 
+------------------------------------------------------------------------------------------------------------------------------
+
+in web app created by react each and every thing is called as component
+type of component
+1. functional compponant 
+2. class component
+
+------------------------------------------------------------------------------------------------------------------------------
+
+jsx
+
+wrting html inside js
+
+function App(){
+retrun <h1> Hello World </h1>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
